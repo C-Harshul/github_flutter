@@ -23,23 +23,10 @@ class ContCard extends StatelessWidget {
               Text('$desc'),
             SizedBox(height: 10),
               Text('WebSite: $webSite'),
-            SizedBox(height: 10),
+            SizedBox(height: 20),
           ],
         ),
-//        child: ListTile(
-//          title:Column(
-//            crossAxisAlignment: CrossAxisAlignment.start,
-//            children: <Widget>[
-//              Text('Username: $userName'),
-//              Text('$desc'),
-//              Text('WebSite: $webSite'),
-//            ],
-//          ),
-//          leading: Padding(
-//            padding: const EdgeInsets.all(8.0),
-//            child: Image.network(dispImg),
-//          ),
-//        ),
+
       ),
     );
   }
