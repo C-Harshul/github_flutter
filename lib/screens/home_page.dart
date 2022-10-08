@@ -8,7 +8,7 @@ import 'contributors.dart';
 import 'search_repos.dart';
 
 class HomePage extends StatefulWidget {
-  static String routename  = 'HomePage';
+  static String routename = 'HomePage';
   HomePage({Key key}) : super(key: key);
 
   @override
@@ -32,7 +32,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
@@ -40,15 +39,15 @@ class _HomePageState extends State<HomePage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
-            title: Text('Search'),
+            label: 'Search',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.apps),
-            title: Text('Contributors'),
+            label: 'Contributors',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.info_outline),
-            title: Text('About Us'),
+            label: 'About Us',
           ),
         ],
         currentIndex: _selectedIndex,
